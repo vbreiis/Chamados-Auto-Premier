@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/134_Vehicles_Wallpapers_3840x2160px.jpg'); /* Certifique-se de que a imagem está na pasta public/images */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#responseMessage {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#ticketNumber {
+    font-size: 18px;
+    text-align: center;
+    color: white; /* Cor branca */
+    margin-top: 25px;
+    font-family: Arial, sans-serif; /* Mesmo estilo de fonte */
+}

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/134_Vehicles_Wallpapers_3840x2160px.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto; /* Centraliza o container e adiciona margem no topo */
+    background: rgba(0, 0, 0, 0.7); /* Fundo mais escuro */
+    padding: 20px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra leve */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda fina */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px; /* Aumenta a margem para espaçamento do título */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+input, textarea {
+    width: calc(100% - 20px); /* Ajusta para 100% da largura menos o padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Fundo transparente */
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: rgba(255, 255, 255, 0.5); /* Muda a cor da borda ao focar */
+}
+
+.ticket-button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #5cb85c;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+#ticketNumber {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pastaconfirmacao/styleconfirmacao.css">
+    <title>Ticket Enviado</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Suporte Auto Premier</h1>
+        <div id="responseMessage" class="fade-in">
+            Seu ticket foi enviado! 😊
+        </div>
+        <div id="ticketNumber" class="fade-in">
+            <!-- O número do ticket será inserido aqui pelo JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Pegar o número do ticket da URL usando regex
+        const path = window.location.pathname;
+        const ticketId = path.split("/").pop(); // Extrai o número após '/confirmacao/'
+
+        // Exibir o número do ticket na página
+        document.getElementById('ticketNumber').innerHTML = `Número do Ticket: #${ticketId}`;
+    </script>
+</body>
+</html>
