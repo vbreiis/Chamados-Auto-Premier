@@ -27,4 +27,14 @@
                 <option value="Media Prioridade">Média Prioridade</option>
                 <option value="Urgente">Urgente</option>
                 <option value="Muito Urgente">Muito Urgente</option>
-           
+            </select>
+
+            <input type="hidden" name="_subject" value="Novo ticket de suporte"> <!-- Assunto fixo do email -->
+            <input type="hidden" name="_cc" value="suporte.ti@autopremier.com.br"> <!-- Email que receberá a cópia -->
+
+            <button type="submit" class="ticket-button">Enviar Ticket</button>
+        </form>
+        <div id="responseMessage" class="hidden">Seu ticket foi enviado com sucesso!</div>
+    </div>
+</body>
+</html>
