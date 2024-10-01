@@ -53,7 +53,7 @@ select {
     appearance: none; /* Remove o estilo padrão do navegador */
     background: rgba(255, 255, 255, 0.2); /* Fundo transparente */
     color: white; /* Cor do texto */
-    font-size: 15px;
+    font-size: 20px;
 }
 
 select option {
