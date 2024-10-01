@@ -37,7 +37,7 @@ input, textarea, select {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
+    border-radius: 20px;
     background: rgba(255, 255, 255, 0.2); /* Fundo transparente */
     color: white;
     font-size: 15px;
@@ -53,7 +53,7 @@ select {
     appearance: none; /* Remove o estilo padrão do navegador */
     background: rgba(255, 255, 255, 0.2); /* Fundo transparente */
     color: white; /* Cor do texto */
-    font-size: 20px;
+    font-size: 15px;
 }
 
 select option {
