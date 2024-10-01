@@ -1,24 +1,29 @@
-<form action="https://formspree.io/f/xjkbnpvp" method="POST">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Auto Premier</title>
+    <!-- Importar o CSS -->
+    <link rel="stylesheet" href="public/style.css"> <!-- Caminho ajustado para a pasta public -->
+</head>
+<body>
+    <div class="container">
+        <h1>Suporte Auto Premier</h1>
+        <form action="https://formspree.io/f/xjkbnpvp" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
 
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="_replyto" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="_replyto" required>
 
-    <label for="issue">Descrição do Problema:</label>
-    <textarea id="issue" name="issue" required></textarea>
+            <label for="issue">Descrição do Problema:</label>
+            <textarea id="issue" name="issue" required></textarea>
 
-    <!-- Novo campo de seleção para a urgência -->
-    <label for="urgency">Como você classifica a urgência do seu chamado?</label>
-    <select id="urgency" name="urgency" required>
-        <option value="Baixa Prioridade">Baixa Prioridade</option>
-        <option value="Media Prioridade">Média Prioridade</option>
-        <option value="Urgente">Urgente</option>
-        <option value="Muito Urgente">Muito Urgente</option>
-    </select>
-
-    <input type="hidden" name="_subject" value="Novo ticket de suporte"> <!-- Assunto fixo do email -->
-    <input type="hidden" name="_cc" value="suporte.ti@autopremier.com.br"> <!-- Email que receberá a cópia -->
-
-    <button type="submit" class="ticket-button">Enviar Ticket</button>
-</form>
+            <!-- Novo campo de seleção para a urgência -->
+            <label for="urgency">Como você classifica a urgência do seu chamado?</label>
+            <select id="urgency" name="urgency" required>
+                <option value="Baixa Prioridade">Baixa Prioridade</option>
+                <option value="Media Prioridade">Média Prioridade</option>
+                <option value="Urgente">Urgente</option>
+           
