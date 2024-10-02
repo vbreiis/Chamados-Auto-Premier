@@ -15,12 +15,13 @@
             <input type="text" id="name" name="name" required>
 
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required> <!-- Correção para "email" -->
+            <!-- Campo _replyto para garantir que o Formspree trate corretamente o destinatário principal -->
+            <input type="email" id="email" name="_replyto" required> 
 
             <label for="issue">Descrição do Problema:</label>
             <textarea id="issue" name="issue" required></textarea>
 
-            <!-- Novo campo de seleção para a urgência -->
+            <!-- Campo de seleção para a urgência -->
             <label for="urgency">Como você classifica a urgência do seu chamado?</label>
             <select id="urgency" name="urgency" required>
                 <option value="Baixa Prioridade">Baixa Prioridade</option>
@@ -30,7 +31,8 @@
             </select>
 
             <input type="hidden" name="_subject" value="Novo ticket de suporte"> <!-- Assunto fixo do email -->
-            <input type="hidden" name="_cc" value="suporte.ti@autopremier.com.br, compras@autopremier.com.br"> <!-- Emails em cópia -->
+            <!-- Emails em cópia -->
+            <input type="hidden" name="_cc" value="suporte.ti@autopremier.com.br,compras@autopremier.com.br">
 
             <button type="submit" class="ticket-button">Enviar Ticket</button>
         </form>
